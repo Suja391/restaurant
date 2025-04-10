@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get The Delicious Roasted Chicken Right At Your Door</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #87CEFA, #6CA6CD);
+      text-align: center;
+    }
+
+    /* Main heading */
+    h1 {
+      margin: 20px auto;
+      font-size: 26px;
+      color: #000080;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    /* Banner at the top */
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Middle images container */
+    .images-row {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; /* Space between images */
+    }
+
+    .images-row img {
+      width: 200px;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Form container */
+    .form-section {
+      margin: 20px auto 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: left; /* align text in form to the left */
+    }
+
+    .form-section label {
+      display: inline-block;
+      width: 120px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .form-section input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Radio groups */
+    .radio-group {
+      margin: 10px 0;
+    }
+
+    .radio-group label {
+      width: auto;
+      margin-left: 0;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    .radio-group input {
+      margin-right: 5px;
+    }
+
+    /* Submit button */
+    .submit-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #228B22;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Get The Delicious Roasted Chicken Right At Your Door</h1>
+
+  <!-- Top Banner (Replace 'banner.jpg' with your actual image) -->
+  <div class="banner">
+    <img src="https://i.pinimg.com/736x/e2/aa/1d/e2aa1d2909d12071fac69ea6f3387949.jpg" 
+         alt="Delicious Roasted Chicken">
+  </div>
+
+  <!-- Middle Images (Replace the src with real image URLs) -->
+  <div class="images-row">
+    <img src="https://i.pinimg.com/736x/18/ae/b9/18aeb9b65e1210fb824c14453ee01b26.jpg" alt="FREE WIFI!">
+    <img src="https://i.pinimg.com/736x/9d/a6/8d/9da68ddc8d573f8a63786a1c1a7be366.jpg" alt="Mickey">
+  </div>
+
+  <!-- Order Form -->
+  <div class="form-section">
+    <form>
+      <!-- Enter Name -->
+      <div>
+        <label for="customerName">Enter your Name:</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Your Name">
+      </div>
+
+      <!-- Choose Main Dish -->
+      <div class="radio-group">
+        <label><strong>Choose the main dish:</strong></label><br>
+        <label><input type="radio" name="dish" value="Pizza"> Pizza</label>
+        <label><input type="radio" name="dish" value="Rice"> Rice</label>
+        <label><input type="radio" name="dish" value="Salad"> Salad</label>
+      </div>
+
+      <!-- Choose Time -->
+      <div class="radio-group">
+        <label><strong>Choose the time:</strong></label><br>
+        <label><input type="radio" name="time" value="Now"> Now</label>
+        <label><input type="radio" name="time" value="1hour"> 1 Hour</label>
+        <label><input type="radio" name="time" value="2hours"> 2 Hours</label>
+      </div>
+
+      <!-- Same day after 3 hours or something else? (Optional) -->
+      <!--
+      <div class="radio-group">
+        <label><strong>Mode of Delivery:</strong></label><br>
+        <label><input type="radio" name="delivery" value="sameDay"> Same day after 3 hours</label>
+      </div>
+      -->
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Place Order</button>
+    </form>
+  </div>
+
+</body>
+</html>
